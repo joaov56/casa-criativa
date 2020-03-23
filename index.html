@@ -4,6 +4,43 @@
     <head>
         <meta charset="UTF-8">
         <title>Casa Criativa</title>
+
+        <style>
+            body{
+                
+                background: #e5e5e5;
+                color: #25282b;
+
+
+                text-align: center;
+
+            }
+
+            button{
+                color: #ff5E84;
+                border: none;
+                font-weight: bold;
+
+                background: none;
+            }
+
+
+            .fat{
+                color: white;
+                background-color: #ff5E84;;
+            }
+
+            #footer a {
+                color: #000000;
+                text-decoration: none;
+
+            }
+
+            .hide {
+                display: none;
+            }
+
+        </style>
     </head>
 
     <body>
@@ -22,12 +59,23 @@
         </p>
 
         <button>+ Adicionar Ideia</button>
-        <button>Ver ideias</button>
+        <button  class="fat">Ver ideias</button>
 
-        <p>com ❤ jao</p>
+        <p id="footer">com ❤ <a href="">jao</a></p>
         
         
     </body>
 
+    <script>
+        document
+            .querySelector("button.fat")
+            .addEventListener("click", function(){
+                document    
+                    .querySelector("#footer")
+                    .classList
+                    .toggle("hide")
+            })
+
+    </script>
 
 </html>
