@@ -1,13 +1,34 @@
 
 body{
-background: #e5e5e5;
-color: #25282b;
+    background: #e5e5e5;
+    color: #25282b;
 
+    font-family: 'Montserrat', sans-serif;
 
-
-margin:0px;
-
+    margin:0px;
+    
 }
+
+.hide {
+    display: none;
+}
+
+a{
+    color: #ff5E84;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p, .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
 
 #container{
     width: 80%;
@@ -32,6 +53,8 @@ main{
     margin-bottom: 32px;
     justify-content: space-evenly;
     
+    
+    
 }
 
 button{
@@ -39,10 +62,17 @@ button{
     background: none;
 
     border: none;
+
+    font-size: 14px;
     font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
 
     cursor: pointer;
     outline: none;
+
+    
+
 }
 
 button:hover {
@@ -55,23 +85,59 @@ button.fat:hover {
 
 
 button.fat{
-color: white;
-background-color: #ff5E84;
+    color: white;
+    background-color: #ff5E84;
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    box-shadow: 2px 8px 16px rgba(255, 0, 92, 0.8);
 }
 
 
 footer{
     text-align: center;
+    font-size: 14px;
+    color: #777;
     
 }
 
-
-footer a {
-color: #000000;
-text-decoration: none;
-
+footer a{
+    opacity: 0.6;
 }
 
-.hide {
-display: none;
+
+
+
+
+
+
+.ideia {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+}
+
+.ideia img {
+    width: 60px;
+    height: 60px;
+
+    margin-right: 32px;   
+}
+
+.ideia h3{
+    margin: 0;
+}
+
+.ideia p {
+    margin: 8px 0;
+    color: #777;
+}
+
+.ideia .description{
+    margin: 16px 0;
 }
