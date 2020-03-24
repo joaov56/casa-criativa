@@ -1,0 +1,77 @@
+
+body{
+background: #e5e5e5;
+color: #25282b;
+
+
+
+margin:0px;
+
+}
+
+#container{
+    width: 80%;
+    max-width: 980px;
+
+    margin: 40px auto;
+
+    display: flex;
+}
+
+#intro {
+    width: 300px;
+    margin-right: 20px;
+}
+
+main{
+    margin: 32px 0;
+}
+
+#buttons{
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-evenly;
+    
+}
+
+button{
+    color: #ff5E84;
+    background: none;
+
+    border: none;
+    font-weight: bold;
+
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+button.fat:hover {
+    text-decoration: none;
+}
+
+
+button.fat{
+color: white;
+background-color: #ff5E84;
+}
+
+
+footer{
+    text-align: center;
+    
+}
+
+
+footer a {
+color: #000000;
+text-decoration: none;
+
+}
+
+.hide {
+display: none;
+}
