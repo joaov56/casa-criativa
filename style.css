@@ -9,9 +9,6 @@ body{
     
 }
 
-.hide {
-    display: none;
-}
 
 a{
     color: #ff5E84;
@@ -141,3 +138,128 @@ footer a{
 .ideia .description{
     margin: 16px 0;
 }
+
+#modal{
+    background: #ff5E84 ;
+    position: absolute;
+
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;    
+    justify-content: center;
+
+}
+
+#modal .content {
+    margin-top: 120px;
+
+    color: white;
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content form{
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+#modal form{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+form label{
+    font-weight: 600px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+
+form a {
+    width: 150px;
+    height: 40px;
+
+    background-color: #ffffff22;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    align-self: end;
+
+    transition: 400ms;
+
+
+
+}
+
+form a:hover{
+    background: #e5e5e5;
+    text-decoration: none;
+    color: #ff5E84;
+}
+form button{
+    margin-top: 32px;
+    background: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    grid-column: 2;
+    justify-self: end;
+
+    transition: 400ms;
+}
+
+form button:hover{
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#modal.hide{
+    opacity: 1;
+    visibility: hidden;
+    
+}
+
