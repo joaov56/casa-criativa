@@ -92,7 +92,29 @@ server.post("/", function(req,res){
 
         return(res.redirect("/ideias"))
     })
+
+    
 })
 
-//server ligado na por
+server.get("/deleteIdea/:id", function(req, res){
+    console.log(req.params)   
+     
+    
+    //Deletar dado da tabela
+    db.run(`DELETE FROM ideas WHERE id= ?`, [req.params.id], function(err){
+       if(err) return console.log(err)
+
+     console.log("Deletei", this)
+    })
+
+    console.log(req)
+    
+    return true
+
+
+    
+})
+
+
+//server on 
 server.listen(3000)
