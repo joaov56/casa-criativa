@@ -1,22 +1,25 @@
 {% for idea in ideas %}
-    <div class="ideia">
-        <img 
-            src="{{idea.image}}"
-            alt={{idea.title}}>
-        
-        <div class="content">
-            <h3>{{idea.title}}</h3>
-            <p>{{idea.category}}</p>
-            <div class="description">
-                {{idea.description}}
-            </div>
+<div class="ideia">
+  <img src="{{idea.image}}" alt="{{idea.title}}" />
 
-            <div class="buttons">
-            <a href="{{idea.link}}", target="_blank">Ir para a ideia</a>
-            <a id="delete" onclick="deleteIdea({{idea.id}})" class= "deleteBtn">Remover</a>
-            
-            </div>
-        </div>                            
+  <div class="content">
+    <h3>{{idea.title}}</h3>
+    <p>{{idea.category}}</p>
+    <div class="description">
+      {{idea.description}}
     </div>
+
+    <div class="buttons">
+      <a href="{{idea.link}}" , target="_blank">Ir para a ideia</a>
+      <a
+        id="delete"
+        onclick="deleteIdea({{idea.id}})"
+        class="deleteBtn"
+        style="margin-left: 40px;"
+        >Remover</a
+      >
+    </div>
+  </div>
+</div>
 
 {% endfor %}
